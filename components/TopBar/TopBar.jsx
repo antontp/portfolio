@@ -9,19 +9,23 @@ const menu = [
 
 function TopBar() {
     return (
-        <Grid 
-            container 
-            direction="row"
-            justifyContent="flex-end"
-        >
-            {menu.map((page, idx) => 
-                <Grid item key={idx} sx={{marginRight: "2rem"}}>
-                    <Link href={page.adress} className={styles.topBarLink}>
-                        {page.name}
-                    </Link>
-                </Grid>
-            )}
-        </Grid>
+        <header className={styles.topBarContainer}>
+            <Grid 
+                container 
+                direction="row"
+                justifyContent="flex-end"
+                alignItems="center"
+                sx={{height: "100%"}}
+            >
+                {menu.map((page, idx) => 
+                    <Grid item key={idx} sx={{marginRight: "2rem"}}>
+                        <Link href={page.adress} className={styles.topBarLink}>
+                            {page.name}
+                        </Link>
+                    </Grid>
+                )}
+            </Grid>
+        </header>
     );
 }
 

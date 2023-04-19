@@ -1,3 +1,7 @@
+.topBarContainer {
+    height: 100%;
+}
+
 .topBarLink {
     text-decoration: none;
     color: black;
