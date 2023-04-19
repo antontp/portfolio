@@ -1,0 +1,8 @@
+.topBarLink {
+    text-decoration: none;
+    color: black;
+}
+
+.topBarLink:hover {
+    color: lightgrey;
+}
