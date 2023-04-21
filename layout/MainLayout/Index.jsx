@@ -7,13 +7,13 @@ function MainLayout({children}) {
     return (
         <>
             <Head>
-				<title>Portfolio</title>
+				<title>Anton Tin Phan</title>
 			</Head>
             <Grid container direction="column" sx={{height: "100vh"}}>
                 <Grid item xs={1}>
                     <TopBar />
                 </Grid>
-                <Grid item xs={9}>
+                <Grid item xs={9} sx={{overflow: "auto"}}>
                     <main>
                         {children}
                     </main>

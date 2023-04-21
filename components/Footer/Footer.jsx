@@ -19,9 +19,9 @@ function Footer() {
 
     const handleClick = (event) => {
         let type = event.currentTarget.getAttribute("id");
-        if (type === "mobile") navigator.clipboard.writeText("97909673");
+        if (type === "mobile")
+            navigator.clipboard.writeText("97909673");
         else navigator.clipboard.writeText("anton-tin@hotmail.com");
-
         typeRef.current = type;
         setSnackOpen(true);
     }
