@@ -5,14 +5,16 @@ const projects = [
     {
         name: "NUK nettside",
         title: "Front-end utvikler",
-        description: "Etårsprosjekt med Norges Unge Katolikker.Full renovering av deres nettside.",
-        url: "https://www.nuk.no/"
+        description: "Etårsprosjekt med Norges Unge Katolikker. Full renovering av deres nettside. Pending Deployment...",
+        url: "https://www.nuk.no/",
+        tools: ["Next.js", "React", "GraphQL", "ApolloGraphQL"]
     },
     {
-        name: "Utvekslingsprosjekt",
+        name: "Enkelt API spill",
         title: "Recipe-feud",
-        description: "Morsomt prosjekt utviklet under utveksling. Spill for to spillere med server-client struktur.",
-        url: "https://github.com/antontp/This-or-that-meal"
+        description: "Spill for to spillere med server-client struktur.",
+        url: "https://github.com/antontp/Recipe-feud",
+        tools: ["Javascript", "Socket.io", "ExpressJS"]
     },
     // {
     //     name: "Utvekslingsprosjekt",
