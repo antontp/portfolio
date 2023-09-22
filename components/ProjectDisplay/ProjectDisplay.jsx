@@ -16,12 +16,12 @@ const projects = [
         url: "https://github.com/antontp/Recipe-feud",
         tools: ["Javascript", "Socket.io", "ExpressJS"]
     },
-    // {
-    //     name: "Utvekslingsprosjekt",
-    //     title: "Recipe-feud",
-    //     description: "Morsomt prosjekt utviklet under utveksling. Spill for to spillere med server-client struktur.",
-    //     url: "https://github.com/antontp/This-or-that-meal"
-    // }
+    {
+        name: "Utepils",
+        title: "App for de som liker utepils",
+        description: "Finner steder man kan ta seg en utepils og få drink forslag basert på været data fra Metrologisk institutt",
+        url: "https://github.com/antontp/Utepils"
+    }
 ]
 
 function ProjectDisplay() {
