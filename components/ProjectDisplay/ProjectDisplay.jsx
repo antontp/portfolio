@@ -17,10 +17,11 @@ const projects = [
         tools: ["Javascript", "Socket.io", "ExpressJS"]
     },
     {
-        name: "Utepils",
-        title: "App for de som liker utepils",
-        description: "Finner steder man kan ta seg en utepils og få drink forslag basert på været data fra Metrologisk institutt",
-        url: "https://github.com/antontp/Utepils"
+        name: "IN2000 - Software Engineering med prosjektarbeid",
+        title: "Utepils",
+        description: "Oversikt over alle steder man kan ta seg en utepils i Oslo og få drink forslag basert på været",
+        url: "https://github.com/antontp/Utepils",
+        tools: ["Kotlin; Jetpack Compose"]
     }
 ]
 
