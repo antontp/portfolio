@@ -6,7 +6,7 @@ export default function Home() {
     	<MainLayout>
 			<div className={styles.mainTextBox}>
 				<h1>Anton Phan</h1>
-				<p>Full-stack utvikler i utvikling...</p>
+				<p>Full-stack utvikler i utvikling!</p>
 			</div>
     	</MainLayout>
 	)
