@@ -1,27 +1,46 @@
 import TopBar from "@/components/TopBar/TopBar";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
-import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
-function MainLayout({children}) {
+function MainLayout({ children }) {
     return (
         <>
             <Head>
-				<title>Anton Tin Phan</title>
-			</Head>
-            <Grid container direction="column" sx={{height: "100vh"}}>
-                <Grid item xs={1}>
-                    <TopBar />
-                </Grid>
-                <Grid item xs={9} sx={{overflow: "auto"}}>
-                    <main>
-                        {children}
-                    </main>
-                </Grid>
-                <Grid item xs={2}>
-                    <Footer />
-                </Grid>
-            </Grid>
+                <title>Anton Phan - Portfolio</title>
+            </Head>
+            <Box
+                sx={{
+                    display: "flex",
+                    flexFlow: "column",
+                    height: "100vh",
+                }}
+            >
+                <Box>
+                    <header>
+                        <TopBar />
+                    </header>
+                </Box>
+
+                <Box
+                    sx={{
+                        flex: 1,
+                        overflow: "auto",
+                    }}
+                >
+                    <main>{children}</main>
+                </Box>
+                <Box
+                    sx={{
+                        overflow: "hidden",
+                        minHeight: "60px",
+                    }}
+                >
+                    <footer>
+                        <Footer />
+                    </footer>
+                </Box>
+            </Box>
         </>
     );
 }

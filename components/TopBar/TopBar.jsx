@@ -1,31 +1,50 @@
-import { Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import Link from "next/link";
-import styles from "./TopBar.module.css";
 
 const menu = [
-    {name: "HOME", adress: "/"},
-    {name: "PROJECTS", adress: "/projects"}
-]
+    { name: "HOME", adress: "/" },
+    { name: "PROJECTS", adress: "/projects" },
+];
 
 function TopBar() {
     return (
-        <header className={styles.topBarContainer}>
-            <Grid 
-                container 
+        <Box
+            sx={{
+                height: 40,
+                padding: "1rem",
+            }}
+        >
+            <Grid
+                container
                 direction="row"
                 justifyContent="flex-end"
                 alignItems="center"
-                sx={{height: "100%"}}
+                sx={{ height: "100%" }}
             >
-                {menu.map((page, idx) => 
-                    <Grid item key={idx} sx={{marginRight: "2rem"}}>
-                        <Link href={page.adress} className={styles.topBarLink}>
-                            {page.name}
+                {menu.map((page, idx) => (
+                    <Box key={idx} sx={{ marginRight: "2rem" }}>
+                        <Link
+                            href={page.adress}
+                            style={{
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    padding: "0.5em",
+                                    "&:hover": {
+                                        backgroundColor: "lightgrey",
+                                    },
+                                }}
+                            >
+                                {page.name}
+                            </Box>
                         </Link>
-                    </Grid>
-                )}
+                    </Box>
+                ))}
             </Grid>
-        </header>
+        </Box>
     );
 }
 
